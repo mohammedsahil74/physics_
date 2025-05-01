@@ -1,108 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link href="/src/style.css" rel="stylesheet" />
-</head>
-<body class="bg-gray-900 text-white min-h-screen">
-  <div class="container mx-auto px-4 flex flex-col lg:flex-row items-stretch min-h-[calc(100vh-80px)]">
-    <!-- Left Side - Form -->
-    <div class="w-full lg:w-1/2 flex flex-col justify-center py-10 lg:py-16 px-4 lg:px-12">
-      <div class="max-w-md mx-auto w-full">
-        <h1 class="font-BebasNeue text-4xl mb-2 text-amber-300">Join Our Physics Community</h1>
-        <p class="text-gray-400 mb-8">Create an account to access interactive lessons, simulations, and more.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="/src/style.css" rel="stylesheet" />
+  </head>
+  <body class="bg-black text-white min-h-screen">
+    <div
+      class="container mx-auto px-4 flex flex-col lg:flex-row items-stretch min-h-[calc(100vh-80px)]"
+    >
+      <!-- Left Side - Form -->
+      <div
+        class="w-full lg:w-1/2 flex flex-col justify-center py-10 lg:py-16 px-4 lg:px-12"
+      >
+        <div class="max-w-md mx-auto w-full">
+          <h1 class="font-BebasNeue text-4xl mb-2 text-amber-300">
+            Join Our Physics Community
+          </h1>
+          <p class="text-gray-400 mb-8">
+            Create an account to access interactive lessons, simulations, and
+            more.
+          </p>
 
-        <form class="space-y-6" action="index.html" method="GET">
-          <!-- Name Field -->
-          <div>
-            <label for="name" class="block text-sm font-medium text-gray-300 mb-1">Full Name</label>
-            <input type="text" id="name" name="name" required
-              class="w-full bg-gray-800 border border-gray-700 rounded-lg py-3 px-4 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-amber-300 transition duration-200">
-          </div>
-
-          <!-- Email Field -->
-          <div>
-            <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email Address</label>
-            <input type="email" id="email" name="email" required
-              class="w-full bg-gray-800 border border-gray-700 rounded-lg py-3 px-4 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-amber-300 transition duration-200">
-          </div>
-
-          <!-- Password Field -->
-          <div>
-            <label for="password" class="block text-sm font-medium text-gray-300 mb-1">Password</label>
-            <input type="password" id="password" name="password" minlength="8" required
-              class="w-full bg-gray-800 border border-gray-700 rounded-lg py-3 px-4 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-amber-300 transition duration-200">
-            <p class="text-xs text-gray-500 mt-1">Must be at least 8 characters</p>
-          </div>
-
-          <!-- Interests Checkboxes -->
-          <div>
-            <label class="block text-sm font-medium text-gray-300 mb-2">I'm interested in:</label>
-            <div class="grid grid-cols-2 gap-2">
-              <label class="flex items-center space-x-2">
-                <input type="checkbox" name="interests" value="mechanics" class="text-amber-300 rounded bg-gray-800 border-gray-700 focus:ring-amber-300">
-                <span class="text-sm text-gray-300">Mechanics</span>
-              </label>
-              <label class="flex items-center space-x-2">
-                <input type="checkbox" name="interests" value="electricity" class="text-amber-300 rounded bg-gray-800 border-gray-700 focus:ring-amber-300">
-                <span class="text-sm text-gray-300">Electricity</span>
-              </label>
-              <label class="flex items-center space-x-2">
-                <input type="checkbox" name="interests" value="thermodynamics" class="text-amber-300 rounded bg-gray-800 border-gray-700 focus:ring-amber-300">
-                <span class="text-sm text-gray-300">Thermodynamics</span>
-              </label>
-              <label class="flex items-center space-x-2">
-                <input type="checkbox" name="interests" value="quantum" class="text-amber-300 rounded bg-gray-800 border-gray-700 focus:ring-amber-300">
-                <span class="text-sm text-gray-300">Quantum Physics</span>
-              </label>
+          <form class="space-y-6" action="index.html" method="GET">
+            <!-- Name Field -->
+            <div>
+              <label
+                for="name"
+                class="block text-sm font-medium text-gray-300 mb-1"
+                >Full Name</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                class="w-full bg-gray-800 border border-gray-700 rounded-lg py-3 px-4 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-amber-300 transition duration-200"
+              />
             </div>
-          </div>
 
-          <!-- Submit Button -->
-          <div>
-            <button type="submit"
-              class="w-full bg-amber-300 text-gray-900 hover:bg-amber-400 font-BebasNeue text-lg py-3 px-4 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-amber-300 focus:ring-offset-2 focus:ring-offset-gray-900">
-              Create Account
-            </button>
-          </div>
-        </form>
+            <!-- Email Field -->
+            <div>
+              <label
+                for="email"
+                class="block text-sm font-medium text-gray-300 mb-1"
+                >Email Address</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="w-full bg-gray-800 border border-gray-700 rounded-lg py-3 px-4 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-amber-300 transition duration-200"
+              />
+            </div>
 
-        <div class="mt-6 text-center">
-          <p class="text-gray-400">Already have an account? <a href="#" class="text-amber-300 hover:underline">Sign in</a></p>
+            <!-- Password Field -->
+            <div>
+              <label
+                for="password"
+                class="block text-sm font-medium text-gray-300 mb-1"
+                >Password</label
+              >
+              <input
+                type="password"
+                id="password"
+                name="password"
+                minlength="8"
+                required
+                class="w-full bg-gray-800 border border-gray-700 rounded-lg py-3 px-4 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-amber-300 transition duration-200"
+              />
+              <p class="text-xs text-gray-500 mt-1">
+                Must be at least 8 characters
+              </p>
+            </div>
+
+            <!-- Interests Checkboxes -->
+            <div>
+              <label class="block text-sm font-medium text-gray-300 mb-2"
+                >I'm interested in:</label
+              >
+              <div class="grid grid-cols-2 gap-2">
+                <label class="flex items-center space-x-2">
+                  <input
+                    type="checkbox"
+                    name="interests"
+                    value="mechanics"
+                    class="text-amber-300 rounded bg-gray-800 border-gray-700 focus:ring-amber-300"
+                  />
+                  <span class="text-sm text-gray-300">Mechanics</span>
+                </label>
+                <label class="flex items-center space-x-2">
+                  <input
+                    type="checkbox"
+                    name="interests"
+                    value="electricity"
+                    class="text-amber-300 rounded bg-gray-800 border-gray-700 focus:ring-amber-300"
+                  />
+                  <span class="text-sm text-gray-300">Electricity</span>
+                </label>
+                <label class="flex items-center space-x-2">
+                  <input
+                    type="checkbox"
+                    name="interests"
+                    value="thermodynamics"
+                    class="text-amber-300 rounded bg-gray-800 border-gray-700 focus:ring-amber-300"
+                  />
+                  <span class="text-sm text-gray-300">Thermodynamics</span>
+                </label>
+                <label class="flex items-center space-x-2">
+                  <input
+                    type="checkbox"
+                    name="interests"
+                    value="quantum"
+                    class="text-amber-300 rounded bg-gray-800 border-gray-700 focus:ring-amber-300"
+                  />
+                  <span class="text-sm text-gray-300">Quantum Physics</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div>
+              <button
+                type="submit"
+                class="w-full bg-amber-300 text-gray-900 hover:bg-amber-400 font-BebasNeue text-lg py-3 px-4 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-amber-300 focus:ring-offset-2 focus:ring-offset-gray-900"
+              >
+                Create Account
+              </button>
+            </div>
+          </form>
+
+          <div class="mt-6 text-center">
+            <p class="text-gray-400">
+              Already have an account?
+              <a href="#" class="text-amber-300 hover:underline">Sign in</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side - Graphic -->
+      <div class="hidden lg:block w-1/2 physics-bg relative overflow-hidden">
+        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+
+        <!-- Simple Static Physics Elements -->
+        <div class="absolute inset-0 flex items-center justify-center">
+          <!-- Atom -->
+          <div class="relative w-80 h-80">
+            <!-- Nucleus -->
+            <div
+              class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-amber-300 rounded-full opacity-80"
+            ></div>
+
+            <!-- Electron Orbits -->
+            <div
+              class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 border border-gray-400 rounded-full opacity-30"
+            ></div>
+            <div
+              class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 h-48 border border-gray-400 rounded-full opacity-30"
+              style="transform: rotate(45deg)"
+            ></div>
+            <div
+              class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 border border-gray-400 rounded-full opacity-30"
+              style="transform: rotate(-30deg)"
+            ></div>
+
+            <!-- Electrons -->
+            <div
+              class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ml-32 w-4 h-4 bg-amber-300 rounded-full"
+            ></div>
+            <div
+              class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mr-24 mt-24 w-4 h-4 bg-amber-300 rounded-full"
+            ></div>
+            <div
+              class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mb-16 ml-16 w-4 h-4 bg-amber-300 rounded-full"
+            ></div>
+          </div>
+        </div>
+
+        <div class="absolute bottom-10 left-10 z-10">
+          <h2 class="font-BebasNeue text-4xl text-amber-300">
+            Discover The Universe
+          </h2>
+          <p class="text-gray-300 mt-2 max-w-md">
+            Join thousands of physics enthusiasts learning through interactive
+            simulations and experiments.
+          </p>
         </div>
       </div>
     </div>
-
-    <!-- Right Side - Graphic -->
-    <div class="hidden lg:block w-1/2 physics-bg relative overflow-hidden">
-      <div class="absolute inset-0 bg-black bg-opacity-60"></div>
-      
-      <!-- Simple Static Physics Elements -->
-      <div class="absolute inset-0 flex items-center justify-center">
-        <!-- Atom -->
-        <div class="relative w-80 h-80">
-          <!-- Nucleus -->
-          <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-amber-300 rounded-full opacity-80"></div>
-          
-          <!-- Electron Orbits -->
-          <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 border border-gray-400 rounded-full opacity-30"></div>
-          <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 h-48 border border-gray-400 rounded-full opacity-30" style="transform: rotate(45deg);"></div>
-          <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 border border-gray-400 rounded-full opacity-30" style="transform: rotate(-30deg);"></div>
-          
-          <!-- Electrons -->
-          <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ml-32 w-4 h-4 bg-amber-300 rounded-full"></div>
-          <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mr-24 mt-24 w-4 h-4 bg-amber-300 rounded-full"></div>
-          <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mb-16 ml-16 w-4 h-4 bg-amber-300 rounded-full"></div>
-        </div>
-      </div>
-      
-      <div class="absolute bottom-10 left-10 z-10">
-        <h2 class="font-BebasNeue text-4xl text-amber-300">Discover The Universe</h2>
-        <p class="text-gray-300 mt-2 max-w-md">Join thousands of physics enthusiasts learning through interactive simulations and experiments.</p>
-      </div>
-    </div>
-  </div>
-</body>
+  </body>
 </html>
