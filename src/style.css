@@ -6,31 +6,202 @@
   --font-BebasNeue: "Bebas Neue", "sans-serif"; 
   --font-spartan: "League Spartan", "sans-serif";
 }
- .gradient-btn {
-            background: linear-gradient(90deg, #FFD54F 0%, #FF85A2 100%);
-            transition: all 0.3s ease;
+ body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      
+      /* Custom responsive styles */
+      .main-container {
+        border: 2px solid black;
+        min-height: 100vh;
+        width: auto;
+        margin: 1rem;
+      }
+      
+      .site-title {
+        font-family: 'BebasNeue', sans-serif;
+        font-weight: 800;
+        padding: 1.5rem;
+        font-size: 1.875rem; /* 3xl */
+      }
+      
+      .hero-title {
+        font-family: 'BebasNeue', sans-serif;
+        font-weight: 800;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        font-size: 2.5rem; /* Smaller on mobile */
+      }
+      
+      .hero-subtitle {
+        font-family: 'BebasNeue', sans-serif;
+        text-align: center;
+        text-decoration: underline;
+        font-size: 1.25rem; /* Smaller on mobile */
+      }
+      
+      .signup-btn {
+        display: inline-block;
+        padding: 0.25rem 1rem;
+        border: 2px solid black;
+        font-family: 'BebasNeue', sans-serif;
+        color: black;
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-top: 1.75rem;
+        transition: background-color 0.3s, color 0.3s;
+      }
+      
+      .signup-btn:hover {
+        background-color: black;
+        color: white;
+        cursor: pointer;
+      }
+      
+      .section-title {
+        font-family: 'BebasNeue', sans-serif;
+        padding: 1.25rem;
+        font-size: 2.5rem; /* Smaller on mobile */
+      }
+      
+      .quadrant-container {
+        width: 100%;
+        max-width: 32rem;
+        aspect-ratio: 5/3;
+        border: 2px solid black;
+        overflow: hidden;
+        position: relative;
+        background-color: white;
+        color: black;
+      }
+      
+      .vertical-divider {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        width: 0.125rem;
+        background-color: black;
+        transform: translateX(-50%);
+        z-index: 10;
+      }
+      
+      .horizontal-divider {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        height: 0.125rem;
+        background-color: black;
+        transform: translateY(-50%);
+        z-index: 10;
+      }
+      
+      .quadrant-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        height: 100%;
+        width: 100%;
+      }
+      
+      .quadrant {
+        padding: 1rem;
+      }
+      
+      .quadrant-content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+      }
+      
+      .quadrant-title {
+        font-size: 1.125rem;
+        font-weight: 700;
+        color: #facc15; /* yellow-400 */
+        margin-bottom: 0.5rem;
+        text-align: center;
+      }
+      
+      .quadrant-text {
+        font-family: 'BebasNeue', sans-serif;
+        text-align: center;
+        font-size: 1.25rem;
+        margin-top: 1.25rem;
+      }
+      
+      /* Media queries for responsive design */
+      @media (min-width: 640px) {
+        .hero-title {
+          font-size: 3.5rem;
         }
         
-        .gradient-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(255, 213, 79, 0.2);
+        .hero-subtitle {
+          font-size: 1.5rem;
         }
         
-        .feature-card {
-            transition: all 0.3s ease;
+        .quadrant {
+          padding: 1.5rem;
         }
         
-        .feature-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(255, 213, 79, 0.3);
+        .quadrant-text {
+          font-size: 1.5rem;
+        }
+      }
+      
+      @media (min-width: 768px) {
+        .main-container {
+          margin: 2rem;
         }
         
-        .physics-icon {
-            animation: float 3s ease-in-out infinite;
+        .hero-title {
+          font-size: 4.5rem;
         }
         
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-            100% { transform: translateY(0px); }
+        .section-title {
+          font-size: 3.75rem;
         }
+      }
+      
+      @media (min-width: 1024px) {
+        .hero-title {
+          font-size: 5rem; /* 7xl */
+        }
+        
+        .hero-subtitle {
+          font-size: 1.5rem; /* 2xl */
+        }
+        
+        .quadrant-text {
+          font-size: 1.5rem; /* 2xl */
+        }
+      }
+      
+      /* Fix for mobile quadrant layouts */
+      @media (max-width: 480px) {
+        .quadrant-grid {
+          grid-template-columns: 1fr;
+          grid-template-rows: repeat(4, 1fr);
+        }
+        
+        .vertical-divider {
+          display: none;
+        }
+        
+        .horizontal-divider {
+          display: none;
+        }
+        
+        .quadrant {
+          border-bottom: 2px solid black;
+        }
+        
+        .quadrant:last-child {
+          border-bottom: none;
+        }
+      }
